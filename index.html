@@ -1,50 +1,205 @@
-<!-- Page Name: Home -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RITM - Home</title>
+<title>Rungta Institute of Technology & Management</title>
+<link rel="icon" type="image/x-icon" href="https://ritm.ac.in/includes/assets/images/header-footer/cu-logo-white.png">
 <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="css/style.css">
+<script src="https://unpkg.com/feather-icons"></script>
+<style>
+    .hero-bg {
+        background-image: url('assets/hero/main-banner-1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .nav-hover:hover { color: #f59e0b; transform: translateY(-2px); }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);}
+    .testimonial-card:hover { background-color: #f8fafc; }
+</style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="font-sans antialiased">
 
-<!-- Header -->
-<!-- Include header code here -->
+<!-- Top Bar -->
+<div class="bg-blue-900 text-white py-2 px-4 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+        <a href="tel:06455222006" class="flex items-center">
+            <i data-feather="phone" class="mr-2"></i>
+            <span>Student Helpline: 0645 522 2006</span>
+        </a>
+    </div>
+    <div class="flex items-center space-x-4">
+        <a href="#" class="hover:text-amber-300"><i data-feather="facebook"></i></a>
+        <a href="#" class="hover:text-amber-300"><i data-feather="twitter"></i></a>
+        <a href="#" class="hover:text-amber-300"><i data-feather="instagram"></i></a>
+        <a href="#" class="hover:text-amber-300"><i data-feather="linkedin"></i></a>
+    </div>
+</div>
 
-<section class="hero-bg h-screen flex items-center justify-center text-center relative" style="background-image: url('assets/hero/home.jpg');">
-  <div class="hero-overlay absolute inset-0"></div>
-  <div class="relative z-10 text-white p-6">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to RITM</h1>
-    <p class="text-lg md:text-2xl mb-6">Premier Technical Institution in Bihar</p>
-    <a href="admissions.html" class="bg-blue-600 px-6 py-3 rounded font-semibold hover:bg-blue-700">Apply Now</a>
+<!-- Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center py-4">
+      <div class="flex items-center">
+        <img src="https://ritm.ac.in/includes/assets/images/header-footer/cu-logo-white.png" alt="RITM Logo" class="h-16">
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="about.html" class="text-blue-900 font-medium nav-hover transition">About</a>
+        <a href="academics.html" class="text-blue-900 font-medium nav-hover transition">Academics</a>
+        <a href="admissions.html" class="text-blue-900 font-medium nav-hover transition">Admissions</a>
+        <a href="placements.html" class="text-blue-900 font-medium nav-hover transition">Placements</a>
+        <a href="research.html" class="text-blue-900 font-medium nav-hover transition">Research</a>
+        <a href="contact.html" class="text-blue-900 font-medium nav-hover transition">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-blue-900">
+          <i data-feather="menu"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-bg text-white py-24 px-4">
+  <div class="max-w-7xl mx-auto md:w-1/2">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">Rungta Institute of Technology & Management</h1>
+    <p class="text-xl mb-8">Forging futures through innovation and excellence in education since 2004</p>
+    <div class="flex flex-wrap gap-4">
+      <a href="#" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Apply Now</a>
+      <a href="#" class="bg-transparent hover:bg-white hover:text-blue-900 text-white font-bold py-3 px-6 border-2 border-white rounded-lg transition duration-300">Explore Programs</a>
+    </div>
   </div>
 </section>
 
-<section class="py-16 bg-gray-100">
-  <div class="container mx-auto px-6 md:px-0 grid md:grid-cols-3 gap-8">
-    <div class="bg-white p-6 rounded shadow card">
-      <h3 class="text-xl font-bold mb-2">Academics</h3>
-      <p>Explore all programs, courses, and academic resources.</p>
-      <a href="academics.html" class="text-blue-600 mt-2 inline-block">Learn More →</a>
+<!-- Stats Section -->
+<section class="bg-blue-900 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div>
+      <div class="text-4xl font-bold mb-2">240+</div>
+      <div class="text-lg">Companies for Placements</div>
     </div>
-    <div class="bg-white p-6 rounded shadow card">
-      <h3 class="text-xl font-bold mb-2">Admissions</h3>
-      <p>Get detailed information about admission criteria and process.</p>
-      <a href="admissions.html" class="text-blue-600 mt-2 inline-block">Learn More →</a>
+    <div>
+      <div class="text-4xl font-bold mb-2">4.75 LPA</div>
+      <div class="text-lg">Highest Engineering Package</div>
     </div>
-    <div class="bg-white p-6 rounded shadow card">
-      <h3 class="text-xl font-bold mb-2">Research & Innovation</h3>
-      <p>Discover ongoing projects, patents, and research initiatives.</p>
-      <a href="research.html" class="text-blue-600 mt-2 inline-block">Learn More →</a>
+    <div>
+      <div class="text-4xl font-bold mb-2">5 LPA</div>
+      <div class="text-lg">Highest Management Package</div>
+    </div>
+    <div>
+      <div class="text-4xl font-bold mb-2">100+</div>
+      <div class="text-lg">Patents & Innovations</div>
+    </div>
+  </div>
+</section>
+
+<!-- Programs Section -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Our Premier Programs</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Engineering Card -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover transition duration-300">
+        <img src="assets/hero/engineering.jpg" alt="Engineering" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 text-blue-900">Engineering</h3>
+          <p class="text-gray-600 mb-4">Cutting-edge programs in AI, Mechanical, Civil, and Computer Science Engineering.</p>
+          <a href="#" class="text-amber-500 font-medium hover:text-amber-600">Explore →</a>
+        </div>
+      </div>
+      <!-- Management Card -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover transition duration-300">
+        <img src="assets/hero/management.jpg" alt="Management" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 text-blue-900">Management</h3>
+          <p class="text-gray-600 mb-4">Industry-aligned MBA and BBA programs with global perspective.</p>
+          <a href="#" class="text-amber-500 font-medium hover:text-amber-600">Explore →</a>
+        </div>
+      </div>
+      <!-- Computer Applications Card -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover transition duration-300">
+        <img src="assets/hero/computer.jpg" alt="Computer Applications" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 text-blue-900">Computer Applications</h3>
+          <p class="text-gray-600 mb-4">BCA and MCA programs designed for the digital economy.</p>
+          <a href="#" class="text-amber-500 font-medium hover:text-amber-600">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Leadership Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Words from Our Leaders</h2>
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- Chairman -->
+      <div class="flex flex-col md:flex-row items-center bg-gray-50 p-6 rounded-lg">
+        <img src="assets/hero/chairman.jpg" alt="Chairman" class="w-32 h-32 rounded-full object-cover mb-4 md:mb-0 md:mr-6">
+        <div>
+          <h3 class="text-xl font-bold text-blue-900">M.P. Rungta</h3>
+          <p class="text-amber-500 mb-2">Chairman</p>
+          <p class="text-gray-600 italic">"Arise awake and stop not till the goal is reached." - Swami Vivekananda</p>
+        </div>
+      </div>
+      <!-- Vice Chairman -->
+      <div class="flex flex-col md:flex-row items-center bg-gray-50 p-6 rounded-lg">
+        <img src="assets/hero/vice-chairman.jpg" alt="Vice Chairman" class="w-32 h-32 rounded-full object-cover mb-4 md:mb-0 md:mr-6">
+        <div>
+          <h3 class="text-xl font-bold text-blue-900">Gopal Prasad Megotia</h3>
+          <p class="text-amber-500 mb-2">Vice Chairman</p>
+          <p class="text-gray-600 italic">"If you want to shine like a sun, first burn like a sun." - APJ Abdul Kalam</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Success Stories</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md testimonial-card transition duration-300">
+        <img src="assets/hero/student1.jpg" alt="Student" class="w-20 h-20 rounded-full mx-auto mb-4">
+        <p class="text-gray-600 mb-4 italic">"Sincere efforts and hard work of RITM faculty provided me a gateway to my career."</p>
+        <div class="text-center">
+          <p class="font-bold text-blue-900">Kompal Ahluwalia</p>
+          <p class="text-amber-500">Placed in Standard Chartered</p>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md testimonial-card transition duration-300">
+        <img src="assets/hero/student2.jpg" alt="Student" class="w-20 h-20 rounded-full mx-auto mb-4">
+        <p class="text-gray-600 mb-4 italic">"Four years at RITM helped me shape my personality."</p>
+        <div class="text-center">
+          <p class="font-bold text-blue-900">Avinash Yadav</p>
+          <p class="text-amber-500">Placed in Atlassian</p>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md testimonial-card transition duration-300">
+        <img src="assets/hero/student3.jpg" alt="Student" class="w-20 h-20 rounded-full mx-auto mb-4">
+        <p class="text-gray-600 mb-4 italic">"RITM shaped me as a person with real-world exposure."</p>
+        <div class="text-center">
+          <p class="font-bold text-blue-900">Kumar Pratik</p>
+          <p class="text-amber-500">Placed in Apple</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Footer -->
-<!-- Include footer code here -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <p>© 2025 Rungta Institute of Technology & Management. All rights reserved.</p>
+  </div>
+</footer>
 
 <script src="js/script.js"></script>
+<script>
+  feather.replace()
+</script>
 </body>
 </html>
