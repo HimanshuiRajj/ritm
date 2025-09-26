@@ -1,31 +1,126 @@
-<!-- Page Name: Placements -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RITM - Placements</title>
-<script src="https://cdn.tailwindcss.com"></script>
+<title>Placements - RITM</title>
+<link rel="icon" type="image/x-icon" href="https://ritm.ac.in/includes/assets/images/header-footer/cu-logo-white.png">
 <link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/feather-icons"></script>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="font-sans antialiased">
 
-<!-- Header -->
-<header class="bg-white shadow-md fixed w-full z-50">
-  <div class="container mx-auto flex justify-between items-center p-4">
-    <a href="index.html"><img src="assets/images/cu-logo-white.png" alt="RITM Logo" class="h-12"></a>
-    <nav class="space-x-6 hidden md:flex">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="academics.html">Academics</a>
-        <a href="admissions.html">Admissions</a>
-        <a href="research.html">Research</a>
-        <a href="placements.html">Placements</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <button class="md:hidden" id="menu-btn">☰</button>
+<!-- Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center py-4">
+      <div class="flex items-center">
+        <img src="https://ritm.ac.in/includes/assets/images/header-footer/cu-logo-white.png" alt="RITM Logo" class="h-16">
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-blue-900 font-medium nav-hover transition">Home</a>
+        <a href="about.html" class="text-blue-900 font-medium nav-hover transition">About</a>
+        <a href="academics.html" class="text-blue-900 font-medium nav-hover transition">Academics</a>
+        <a href="admissions.html" class="text-blue-900 font-medium nav-hover transition">Admissions</a>
+        <a href="placements.html" class="text-blue-900 font-medium nav-hover transition">Placements</a>
+        <a href="research.html" class="text-blue-900 font-medium nav-hover transition">Research</a>
+        <a href="contact.html" class="text-blue-900 font-medium nav-hover transition">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-blue-900"><i data-feather="menu"></i></button>
+      </div>
+    </div>
   </div>
-</header>
+</nav>
 
-<div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
-    <a href="index.html" class="block px-4 py-2">H
+<!-- Hero Section -->
+<section class="hero-bg text-white py-24 px-4">
+  <div class="max-w-7xl mx-auto md:w-1/2">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">RITM Placements</h1>
+    <p class="text-xl mb-8">Connecting students with top global companies to build their careers.</p>
+  </div>
+</section>
+
+<!-- Placement Stats -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-blue-900 mb-12">Placement Highlights</h2>
+    <div class="grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="text-4xl font-bold mb-2">240+</div>
+        <div class="text-gray-700">Companies Visited</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold mb-2">4.75 LPA</div>
+        <div class="text-gray-700">Highest Engineering Package</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold mb-2">5 LPA</div>
+        <div class="text-gray-700">Highest Management Package</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold mb-2">1000+</div>
+        <div class="text-gray-700">Students Placed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Top Companies -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-blue-900 mb-12 text-center">Top Recruiters</h2>
+    <div class="grid md:grid-cols-4 gap-8 items-center text-center">
+      <img src="https://ritm.ac.in/latest-assets/images/companies/standard-chartered.webp" alt="Standard Chartered" class="h-20 mx-auto object-contain">
+      <img src="https://ritm.ac.in/latest-assets/images/companies/apple.webp" alt="Apple" class="h-20 mx-auto object-contain">
+      <img src="https://ritm.ac.in/latest-assets/images/companies/atlassian.webp" alt="Atlassian" class="h-20 mx-auto object-contain">
+      <img src="https://ritm.ac.in/latest-assets/images/companies/microsoft.webp" alt="Microsoft" class="h-20 mx-auto object-contain">
+      <img src="https://ritm.ac.in/latest-assets/images/companies/google.webp" alt="Google" class="h-20 mx-auto object-contain">
+      <img src="https://ritm.ac.in/latest-assets/images/companies/tcs.webp" alt="TCS" class="h-20 mx-auto object-contain">
+      <img src="https://ritm.ac.in/latest-assets/images/companies/infosys.webp" alt="Infosys" class="h-20 mx-auto object-contain">
+      <img src="https://ritm.ac.in/latest-assets/images/companies/wipro.webp" alt="Wipro" class="h-20 mx-auto object-contain">
+    </div>
+  </div>
+</section>
+
+<!-- Success Stories -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-blue-900 mb-12 text-center">Success Stories</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Student 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-md testimonial-card transition duration-300 text-center">
+        <img src="https://ritm.ac.in/latest-assets/images/kompal-ahluwalia.webp" alt="Kompal Ahluwalia" class="w-20 h-20 rounded-full mx-auto mb-4">
+        <p class="text-gray-600 mb-2 italic">Placed in Standard Chartered, excelled in finance and analytics roles.</p>
+        <p class="font-bold text-blue-900">Kompal Ahluwalia</p>
+      </div>
+      <!-- Student 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-md testimonial-card transition duration-300 text-center">
+        <img src="https://ritm.ac.in/latest-assets/images/avinash-yadav.webp" alt="Avinash Yadav" class="w-20 h-20 rounded-full mx-auto mb-4">
+        <p class="text-gray-600 mb-2 italic">Placed in Atlassian, became a top software developer in his batch.</p>
+        <p class="font-bold text-blue-900">Avinash Yadav</p>
+      </div>
+      <!-- Student 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-md testimonial-card transition duration-300 text-center">
+        <img src="https://ritm.ac.in/latest-assets/images/kumar-pratik.webp" alt="Kumar Pratik" class="w-20 h-20 rounded-full mx-auto mb-4">
+        <p class="text-gray-600 mb-2 italic">Placed in Apple, excelling in product development and innovation.</p>
+        <p class="font-bold text-blue-900">Kumar Pratik</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <p>© 2025 Rungta Institute of Technology & Management. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  feather.replace()
+</script>
+</body>
+</html>
