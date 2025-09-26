@@ -1,0 +1,33 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+header a {
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #2563eb; /* Tailwind blue-600 */
+}
+
+/* Hero overlay */
+.hero-overlay {
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Section headings */
+h2 {
+    font-weight: 700;
+}
+
+/* Card hover */
+.card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s;
+}
