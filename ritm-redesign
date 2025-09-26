@@ -1,0 +1,27 @@
+ritm-redesign/
+│
+├── index.html
+├── about.html
+├── academics.html
+├── admissions.html
+├── research.html
+├── placements.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+└── assets/
+    ├── images/
+    │   └── cu-logo-white.png
+    └── hero/
+        ├── home.jpg
+        ├── about.jpg
+        ├── academics.jpg
+        ├── admissions.jpg
+        ├── research.jpg
+        ├── placements.jpg
+        └── contact.jpg
