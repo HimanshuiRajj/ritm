@@ -1,17 +1,24 @@
-// Mobile menu toggle
+// Mobile Menu Toggle
 const menuBtn = document.getElementById('menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-if(menuBtn) {
-    menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+menuBtn.addEventListener('click', () => {
+    const navLinks = document.querySelector('.md\\:flex');
+    navLinks.classList.toggle('hidden');
+});
+
+// Feather Icons
+feather.replace();
+
+// Optional: VANTA.GLOBE background for hero
+if (document.getElementById('hero')) {
+    VANTA.GLOBE({
+        el: "#hero",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0xf59e0b,
+        backgroundColor: 0x1e40af
     });
 }
-
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if(target) target.scrollIntoView({ behavior: 'smooth' });
-    });
-});
